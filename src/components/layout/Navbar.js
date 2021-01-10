@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export class Navbar extends Component {
-	render() {
-		return (
-			<div>
-				<h1 className='navbav bg-primary'>
-					<i class='fa fa-github' aria-hidden='true'></i> NavBar
-				</h1>
-			</div>
-		);
-	}
-}
+const Navbar = (props) => {
+	return (
+		<div>
+			<h1 className='navBav bg-primary'>
+				<i class='fa fa-github' aria-hidden='true'></i> NavBar
+			</h1>
+		</div>
+	);
+};
+
+// Navbar.defaultProps = {
+//  title: 'GitHub Finder'
+//   icon: 'fab fa-github'
+// };
 
 export default Navbar;
