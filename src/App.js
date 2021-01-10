@@ -1,9 +1,16 @@
 import './App.css';
 import React from 'react';
+import NavBar, { Navbar } from './components/layout/Navbar';
+import UsersItems from './components/users/UsersItems';
 
 class App extends React.Component {
 	render() {
-		return <div className='App'>Hello its me juvinaei</div>;
+		return (
+			<nav className='App'>
+				<Navbar />
+				<UsersItems />
+			</nav>
+		);
 	}
 }
 
